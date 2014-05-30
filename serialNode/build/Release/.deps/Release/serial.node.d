@@ -1,0 +1,1 @@
+cmd_Release/serial.node := ./gyp-mac-tool flock ./Release/linker.lock c++ -shared -Wl,-search_paths_first -mmacosx-version-min=10.5 -arch x86_64 -L./Release -install_name @rpath/serial.node  -o Release/serial.node Release/obj.target/serial/serialWrapper.o Release/obj.target/serial/serial.o -undefined dynamic_lookup

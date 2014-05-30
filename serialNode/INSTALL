@@ -1,0 +1,4 @@
+#!/bin/sh
+set -x
+
+sudo cp -r ../serialNode ~/node_modules/serial
